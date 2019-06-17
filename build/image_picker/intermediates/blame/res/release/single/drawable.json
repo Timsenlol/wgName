@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Users\\timwi\\wg_app\\build\\image_picker\\intermediates\\res\\merged\\release\\drawable\\notification_tile_bg.xml",
+        "source": "C:\\Users\\timwi\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.0.aar\\f1258743eee3747a3d2b4381a23ae415\\res\\drawable\\notification_tile_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\timwi\\wg_app\\build\\image_picker\\intermediates\\res\\merged\\release\\drawable\\notification_icon_background.xml",
+        "source": "C:\\Users\\timwi\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.0.aar\\f1258743eee3747a3d2b4381a23ae415\\res\\drawable\\notification_icon_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\timwi\\wg_app\\build\\image_picker\\intermediates\\res\\merged\\release\\drawable\\notification_bg_low.xml",
+        "source": "C:\\Users\\timwi\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.0.aar\\f1258743eee3747a3d2b4381a23ae415\\res\\drawable\\notification_bg_low.xml"
+    },
+    {
+        "merged": "C:\\Users\\timwi\\wg_app\\build\\image_picker\\intermediates\\res\\merged\\release\\drawable\\notification_bg.xml",
+        "source": "C:\\Users\\timwi\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.0.aar\\f1258743eee3747a3d2b4381a23ae415\\res\\drawable\\notification_bg.xml"
+    }
+]

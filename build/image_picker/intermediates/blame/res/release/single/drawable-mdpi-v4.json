@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "C:\\Users\\timwi\\wg_app\\build\\image_picker\\intermediates\\res\\merged\\release\\drawable-mdpi-v4\\notification_bg_normal_pressed.9.png",
+        "source": "C:\\Users\\timwi\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.0.aar\\f1258743eee3747a3d2b4381a23ae415\\res\\drawable-mdpi-v4\\notification_bg_normal_pressed.9.png"
+    },
+    {
+        "merged": "C:\\Users\\timwi\\wg_app\\build\\image_picker\\intermediates\\res\\merged\\release\\drawable-mdpi-v4\\notification_bg_low_pressed.9.png",
+        "source": "C:\\Users\\timwi\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.0.aar\\f1258743eee3747a3d2b4381a23ae415\\res\\drawable-mdpi-v4\\notification_bg_low_pressed.9.png"
+    },
+    {
+        "merged": "C:\\Users\\timwi\\wg_app\\build\\image_picker\\intermediates\\res\\merged\\release\\drawable-mdpi-v4\\notify_panel_notification_icon_bg.png",
+        "source": "C:\\Users\\timwi\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.0.aar\\f1258743eee3747a3d2b4381a23ae415\\res\\drawable-mdpi-v4\\notify_panel_notification_icon_bg.png"
+    },
+    {
+        "merged": "C:\\Users\\timwi\\wg_app\\build\\image_picker\\intermediates\\res\\merged\\release\\drawable-mdpi-v4\\notification_bg_low_normal.9.png",
+        "source": "C:\\Users\\timwi\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.0.aar\\f1258743eee3747a3d2b4381a23ae415\\res\\drawable-mdpi-v4\\notification_bg_low_normal.9.png"
+    },
+    {
+        "merged": "C:\\Users\\timwi\\wg_app\\build\\image_picker\\intermediates\\res\\merged\\release\\drawable-mdpi-v4\\notification_bg_normal.9.png",
+        "source": "C:\\Users\\timwi\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.0.aar\\f1258743eee3747a3d2b4381a23ae415\\res\\drawable-mdpi-v4\\notification_bg_normal.9.png"
+    }
+]
