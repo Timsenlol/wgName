@@ -61,6 +61,7 @@ mixin EinkaufsListeModel on ConnectedProductsModel {
 
     final http.Response response = await http.post(
         'https://wgapp-51a82.firebaseio.com/Einkaufsliste.json?auth=${_authenicatedUser.token}',
+        
         body: json.encode(item));
 
     if (response.statusCode != 200 && response.statusCode != 201) {

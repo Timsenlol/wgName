@@ -13,7 +13,7 @@ class NewsFeedPage extends StatelessWidget {
         children: <Widget>[
           AppBar(
             automaticallyImplyLeading: false,
-            title: Text('Choose'),
+            title: Text('Auswählen'),
           ),
           ZurEinkaufsListe(),
           MeineWgTile(),
@@ -54,14 +54,14 @@ class NewsFeedPage extends StatelessWidget {
                         child: Column(
                   children: <Widget>[
                     Text(
-                        'Sie sind noch in keiner Wg.....erstellen Sie eine eigene oder treten Sie einer bei!!',
+                        'Sie sind noch in keiner WG.....erstellen Sie eine eigene oder treten Sie einer bei!!',
                         textAlign: TextAlign.center,
                         style: TextStyle(fontWeight: FontWeight.bold)),
                     Row(children: <Widget>[
                       Expanded(
                         child: RaisedButton(
                             textColor: Colors.white,
-                            child: Text('Wg erstellen'),
+                            child: Text('WG erstellen'),
                             onPressed: () {
                               Navigator.of(context).pushNamed('/wgErstellen');
                             }),
@@ -72,7 +72,7 @@ class NewsFeedPage extends StatelessWidget {
                       Expanded(
                           child: RaisedButton(
                               textColor: Colors.white,
-                              child: Text('Wg beitreten'),
+                              child: Text('WG beitreten'),
                               onPressed: () {
                                 Navigator.of(context).pushNamed('/wgListe');
                                 
@@ -94,7 +94,7 @@ class NewsFeedPage extends StatelessWidget {
               
             ),
             child: Center(
-                child: Text('Wg wurde erkannt/Feed Laden'),
+                child: Text('WG wurde erkannt/Feed Laden'),
               ),),
               
             );

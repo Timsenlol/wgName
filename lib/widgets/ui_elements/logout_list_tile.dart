@@ -14,6 +14,7 @@ class LogoutListTile extends StatelessWidget {
           title: Text('Logut'),
           onTap: () {
             // Navigator.pop(context);
+            
 
             model.logout().then((_) {});
 

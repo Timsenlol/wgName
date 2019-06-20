@@ -1,4 +1,5 @@
 import 'package:scoped_model/scoped_model.dart';
+import 'package:wg_app/models/user.dart';
 import 'package:wg_app/scoped_models/main.dart';
 
 import 'package:flutter/material.dart';
@@ -8,6 +9,9 @@ import 'package:wg_app/widgets/ui_elements/meine_wg-ListTile.dart';
 import 'package:wg_app/widgets/ui_elements/zueinkaufsListe.dart';
 
 class MeineWgPage extends StatelessWidget {
+
+
+
   DecorationImage _buildBackgroundImage() {
     return DecorationImage(
       fit: BoxFit.cover,
@@ -24,7 +28,7 @@ class MeineWgPage extends StatelessWidget {
         children: <Widget>[
           AppBar(
             automaticallyImplyLeading: false,
-            title: Text('Choose'),
+            title: Text('Auswählen'),
           ),
           ListTile(
             leading: Icon(Icons.announcement),
@@ -49,9 +53,9 @@ class MeineWgPage extends StatelessWidget {
     return ScopedModelDescendant<MainModel>(
         builder: (BuildContext context, Widget child, MainModel model) {
       return Scaffold(
-        drawer: _buildSideDrawer(context),
+          drawer: _buildSideDrawer(context),
           appBar: AppBar(
-            title: Text('Meine Wg'),
+            title: Text('Meine WG'),
           ),
           body: Center(
             child: Container(
@@ -70,21 +74,24 @@ class MeineWgPage extends StatelessWidget {
                       SizedBox(
                         width: 10,
                       ),
-                      Text(model.user.email,
+                      Text(model.user==null? 'Keine Email bekannt': model.user.email,
                           style: Theme.of(context).textTheme.title),
                     ],
                   ),
+                  SizedBox(
+                    height: 10,
+                  ),
                   Row(
                     children: <Widget>[
                       Expanded(
-                        child: Text('Wg Name :',
+                        child: Text('WG Name :',
                             style: Theme.of(context).textTheme.title),
                       ),
                       SizedBox(
                         width: 10,
                       ),
                       Text(
-                        model.wg.wgName,
+                        model.user==null?'Kein WgName bekannt':model.wg.wgName,
                         style: Theme.of(context).textTheme.title,
                       )
                     ],
@@ -95,14 +102,14 @@ class MeineWgPage extends StatelessWidget {
                   Row(
                     children: <Widget>[
                       Expanded(
-                        child: Text('Wg Passwort :',
+                        child: Text('WG Passwort :',
                             style: Theme.of(context).textTheme.title),
                       ),
                       SizedBox(
                         width: 10,
                       ),
                       Text(
-                        model.wg.pwd,
+                        model.user==null?'Kein WG Passwort bekannt':model.wg.pwd,
                         style: Theme.of(context).textTheme.title,
                       )
                     ],
@@ -113,14 +120,14 @@ class MeineWgPage extends StatelessWidget {
                   Row(
                     children: <Widget>[
                       Expanded(
-                        child: Text('Wg id :',
+                        child: Text('WG id :',
                             style: Theme.of(context).textTheme.title),
                       ),
                       SizedBox(
                         width: 10,
                       ),
                       Text(
-                        model.wg.id,
+                        model.user==null?'Keine WG bekannt':model.wg.id,
                         style: Theme.of(context).textTheme.title,
                       )
                     ],

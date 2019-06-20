@@ -28,19 +28,30 @@ class _WgVerlassenListTileState extends State<WgVerlassenListTile>{
         } else {
           return ListTile(
             leading: Icon(Icons.backspace),
-            title: Text('Wg verlassen'),
+            title: Text('WG verlassen'),
             onTap: () {
               showDialog(context: context,
               builder: (BuildContext context) {
                 return AlertDialog(
-                title: Text('Wg verlassen?'),
-                content: Text('Wollen Sie wirklich die Wg verlassen?'),
+                title: Text('WG verlassen?'),
+                content: Text('Wollen Sie wirklich die WG verlassen?'),
                 actions: <Widget>[
                   FlatButton(
-                    child: Text('ok'),
+                    child: Text('Ja'),
                     onPressed: () {
                       //setState(() {
                         model.wgVerlassen();
+                        Navigator.of(context).pushReplacementNamed('/');
+                      
+                     // });
+                      
+                    },
+                  ),
+                   FlatButton(
+                    child: Text('Nein'),
+                    onPressed: () {
+                      //setState(() {
+                       
                         Navigator.of(context).pushReplacementNamed('/');
                       
                      // });

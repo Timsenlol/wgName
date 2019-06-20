@@ -51,11 +51,11 @@ class _AuthPageState extends State<AuthPage> {
   Widget _buildPWDConfirmTextField() {
     return TextFormField(
       decoration: InputDecoration(
-          labelText: 'Confirm Password', filled: true, fillColor: Colors.white),
+          labelText: 'Passwort bestätigen', filled: true, fillColor: Colors.white),
       obscureText: true,
       validator: (String value) {
         if (_pwdTextController.text != value) {
-          return 'Passwords not equal';
+          return 'Passwörter stimmen nicht überein';
         }
       },
     );
@@ -64,12 +64,12 @@ class _AuthPageState extends State<AuthPage> {
   Widget _buildPasswordTextField() {
     return TextFormField(
       decoration: InputDecoration(
-          labelText: 'Password', filled: true, fillColor: Colors.white),
+          labelText: 'Passwort', filled: true, fillColor: Colors.white),
       obscureText: true,
       controller: _pwdTextController,
       validator: (String value) {
         if (value.isEmpty || value.length < 6) {
-          return 'Password invalid';
+          return 'Passwort unzulässig';
         }
       },
       onSaved: (String value) {
@@ -86,7 +86,7 @@ class _AuthPageState extends State<AuthPage> {
           _formData['acceptTerms'] = value;
         });
       },
-      title: Text('Accept Terms'),
+      title: Text('AGB bestätigen'),
     );
   }
 
@@ -139,7 +139,7 @@ class _AuthPageState extends State<AuthPage> {
     final double targetWidth = deviceWidth > 550.0 ? 500.0 : deviceWidth * 0.95;
     return Scaffold(
       appBar: AppBar(
-        title: Text('Login'),
+        title: Text( '${_authMode == AuthMode.Login ? 'Login' : 'SignUp'}'),
       ),
       body: Container(
         decoration: BoxDecoration(
@@ -173,7 +173,7 @@ class _AuthPageState extends State<AuthPage> {
                     ),
                     FlatButton(
                       child: Text(
-                          'Switch to ${_authMode == AuthMode.Login ? 'Signup' : 'Login'}'),
+                          'Switch to ${_authMode == AuthMode.Login ? 'SignUp' : 'Login'}'),
                       onPressed: () {
                         setState(() {
                           _authMode = _authMode == AuthMode.Login

@@ -32,12 +32,12 @@ class _WgBeitretenPageState extends State<WgBeitretenPage> {
   Widget _buildPasswordTextField() {
     return TextFormField(
       decoration: InputDecoration(
-          labelText: 'Wg Password', filled: true, fillColor: Colors.white),
+          labelText: 'WG Password', filled: true, fillColor: Colors.white),
       obscureText: true,
       controller: _pwdTextController,
       validator: (String value) {
         if (value.isEmpty) {
-          return 'Bitte geben Sie ein Wg Passwort an';
+          return 'Bitte geben Sie ein WG Passwort an';
         }
       },
       onSaved: (String value) {

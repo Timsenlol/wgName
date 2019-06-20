@@ -154,7 +154,7 @@ class _EinkaufsListePageState extends State<EinkaufsListePage> {
         children: <Widget>[
           AppBar(
             automaticallyImplyLeading: false,
-            title: Text('Choose'),
+            title: Text('Auswählen'),
           ),
           ListTile(
             leading: Icon(Icons.announcement),
@@ -185,7 +185,7 @@ class _EinkaufsListePageState extends State<EinkaufsListePage> {
 
   Widget _buildEditButton(BuildContext context, int index, MainModel model) {
     return IconButton(
-      icon: Icon(Icons.input),
+      icon: Icon(Icons.edit),
       onPressed: () {
         model.selectItem(einkaufsliste[index].id);
 
